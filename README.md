@@ -68,3 +68,8 @@ Frozen account will not accept any `withdrawal`'s or `deposit`'s but still can p
 - in-memory ledger uses BtreeMap instead of hashmap to avoid linear behaviour on growth and use a bit less memory. 
 - csv file reads and writes are buffered, but in-memory ledger can grow without bounds. 
 
+## How to use: 
+
+```bash
+cargo run --release -- <file.csv> > <output-file.csv>
+```
